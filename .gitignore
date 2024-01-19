@@ -1,0 +1,11 @@
+.nextflow*
+work/
+data/
+results/
+assets/reference/*
+assets/containers/*
+assets/targets/*
+out/
+.DS_Store
+testing/
+testing*
