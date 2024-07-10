@@ -15,6 +15,11 @@ normals, and quality control reporting and metrics. The main subworkflows can be
 To run these workflows, you will need to install [Nextflow](https://github.com/nextflow-io/nextflow) (23.04.3) and [Singularity](https://github.com/sylabs/singularity) (3.8.7)
 on an x86_64 machine. On the first run, a Docker image will be pulled to create a Singularity container with all of the required software for the workflow.
 
+There are also a few different reference files which are needed to run this pipeline. The names of these specific files can be found in the `nextflow.config` file. Before you run your workflows, be sure that you have all of these required reference files in the directories defined in `nextflow.config`. You can find these these files in the follow GATK resource buckets:
+
+- [Genomics Public Data Bucket](https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0)
+- [GATK Best Practices Bucket](https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38)
+
 ```text
   ____    _    ____                               
  / ___|  / \  |  _ \                              
